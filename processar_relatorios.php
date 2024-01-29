@@ -49,6 +49,6 @@ function gerarPDF($cliente, $cidade, $datainicial, $datafinal)
 
 
     ob_clean();  
-    $pdf->Output('relatorio.pdf', 'F'); 
+    $pdf->Output('relatorio.pdf', 'I'); 
 }
 ?>
