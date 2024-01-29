@@ -49,6 +49,8 @@ function gerarPDF($cliente, $cidade, $datainicial, $datafinal)
 
 
     ob_clean();  
+    header('Content-Type: application/pdf');
+    header('Content-Disposition: inline; filename=relatorio.pdf');
     $pdf->Output('relatorio.pdf', 'I'); 
 }
 ?>
